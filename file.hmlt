@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hams Math - Select Topic</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    button {
+      background-color: orange;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+      flex: 1 1 130px;
+      max-width: 150px;
+    }
+    button:hover {
+      background-color: darkorange;
+    }
+    button.selected {
+      background-color: #ff6f00;
+      box-shadow: 0 0 10px #ff6f00;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hams Math - Select a Topic</h1>
+  
+  <div class="button-container">
+    <button data-topic="Algebra">Algebra</button>
+    <button data-topic="Calculus">Calculus</button>
+    <button data-topic="Trigonometry">Trigonometry</button>
+    <button data-topic="Geometry">Geometry</button>
+    <button data-topic="Quadratic Formula">Quadratic Formula</button>
+    <button data-topic="Linear Equations">Linear Equations</button>
+    <button data-topic="Statistics">Statistics</button>
+    <button data-topic="Probability">Probability</button>
+    <button data-topic="Number Theory">Number Theory</button>
+    <button data-topic="Collatz Conjecture">Collatz Conjecture</button>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('button');
+    let selectedButton = null;
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove "selected" class from previous button
+        if (selectedButton) {
+          selectedButton.classList.remove('selected');
+        }
+        // Add "selected" class to clicked button
+        btn.classList.add('selected');
+        selectedButton = btn;
+
+        // For now, just log the topic name
+        console.log("Selected topic:", btn.dataset.topic);
+
+        // TODO: add your logic here to load or display content based on selection
+      });
+    });
+  </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hams Math - Select Topic</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    button {
+      background-color: orange;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+      flex: 1 1 130px;
+      max-width: 150px;
+    }
+    button:hover {
+      background-color: darkorange;
+    }
+    button.selected {
+      background-color: #ff6f00;
+      box-shadow: 0 0 10px #ff6f00;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hams Math - Select a Topic</h1>
+  
+  <div class="button-container">
+    <button data-topic="Algebra">Algebra</button>
+    <button data-topic="Calculus">Calculus</button>
+    <button data-topic="Trigonometry">Trigonometry</button>
+    <button data-topic="Geometry">Geometry</button>
+    <button data-topic="Quadratic Formula">Quadratic Formula</button>
+    <button data-topic="Linear Equations">Linear Equations</button>
+    <button data-topic="Statistics">Statistics</button>
+    <button data-topic="Probability">Probability</button>
+    <button data-topic="Number Theory">Number Theory</button>
+    <button data-topic="Collatz Conjecture">Collatz Conjecture</button>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('button');
+    let selectedButton = null;
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove "selected" class from previous button
+        if (selectedButton) {
+          selectedButton.classList.remove('selected');
+        }
+        // Add "selected" class to clicked button
+        btn.classList.add('selected');
+        selectedButton = btn;
+
+        // For now, just log the topic name
+        console.log("Selected topic:", btn.dataset.topic);
+
+        // TODO: add your logic here to load or display content based on selection
+      });
+    });
+  </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hams Math - Select Topic</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    button {
+      background-color: orange;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+      flex: 1 1 130px;
+      max-width: 150px;
+    }
+    button:hover {
+      background-color: darkorange;
+    }
+    button.selected {
+      background-color: #ff6f00;
+      box-shadow: 0 0 10px #ff6f00;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hams Math - Select a Topic</h1>
+  
+  <div class="button-container">
+    <button data-topic="Algebra">Algebra</button>
+    <button data-topic="Calculus">Calculus</button>
+    <button data-topic="Trigonometry">Trigonometry</button>
+    <button data-topic="Geometry">Geometry</button>
+    <button data-topic="Quadratic Formula">Quadratic Formula</button>
+    <button data-topic="Linear Equations">Linear Equations</button>
+    <button data-topic="Statistics">Statistics</button>
+    <button data-topic="Probability">Probability</button>
+    <button data-topic="Number Theory">Number Theory</button>
+    <button data-topic="Collatz Conjecture">Collatz Conjecture</button>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('button');
+    let selectedButton = null;
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove "selected" class from previous button
+        if (selectedButton) {
+          selectedButton.classList.remove('selected');
+        }
+        // Add "selected" class to clicked button
+        btn.classList.add('selected');
+        selectedButton = btn;
+
+        // For now, just log the topic name
+        console.log("Selected topic:", btn.dataset.topic);
+
+        // TODO: add your logic here to load or display content based on selection
+      });
+    });
+  </script>
+
+</body>
+</html>
